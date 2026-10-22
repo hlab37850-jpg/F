@@ -27,11 +27,6 @@ android {
     }
 }
 
-// إضافة مستودع JitPack ضروري لبعض المكتبات
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
@@ -41,9 +36,9 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     
-    // المكتبات المفقودة التي تسبب أخطاء السمات:
-    implementation 'androidx.percentlayout:percentlayout:1.0.0' // لـ layout_heightPercent
-    implementation 'com.journeyapps:zxing-android-embedded:4.3.0' // لـ zxing_* attributes
-    implementation 'com.github.kyanogen:signatureview:1.2' // لـ penColor, enableSignature
-    implementation 'com.github.nikartm:image-support:2.0.0' // لـ ibv_* attributes
+    // المكتبات الخارجية (سيتم تحميلها الآن بنجاح عبر JitPack الموجود في settings.gradle)
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    implementation 'com.github.kyanogen:signatureview:1.2'
+    implementation 'com.github.nikartm:image-support:2.0.0'
 }
