@@ -29,11 +29,5 @@
     <attr name="ibv_badgeColor" format="color" />
     <attr name="ibv_badgeTextStyle" format="reference" />
     
-    <!-- سمات ZXing Barcode Scanner -->
-    <attr name="zxing_use_texture_view" format="boolean" />
-    <attr name="zxing_preview_scaling_strategy" format="enum">
-        <enum name="centerCrop" value="0"/>
-        <enum name="fitCenter" value="1"/>
-        <enum name="fitXY" value="2"/>
-    </attr>
+    <!-- تم إزالة سمات ZXing (zxing_use_texture_view, zxing_preview_scaling_strategy) لأنها موجودة في مكتبة com.journeyapps:zxing-android-embedded في build.gradle -->
 </resources>
