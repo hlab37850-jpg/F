@@ -18,16 +18,21 @@
     <attr name="layout_heightPercent" format="fraction" />
     <attr name="layout_widthPercent" format="fraction" />
     
-    <!-- سمات ImageBadgeView (IBV) -->
+    <!-- سمات ImageBadgeView (IBV) - تم تصحيح الأنواع -->
     <attr name="ibv_badgeTextSize" format="dimension" />
-    <attr name="ibv_badgePosition" format="integer" />
+    <attr name="ibv_badgePosition" format="enum">
+        <enum name="top_left" value="0"/>
+        <enum name="top_right" value="1"/>
+        <enum name="bottom_left" value="2"/>
+        <enum name="bottom_right" value="3"/>
+    </attr>
     <attr name="ibv_fixedBadgeRadius" format="dimension" />
     <attr name="ibv_badgeTextColor" format="color" />
     <attr name="ibv_badgeValue" format="string" />
     <attr name="ibv_maxBadgeValue" format="integer" />
     <attr name="ibv_badgeLimitValue" format="boolean" />
     <attr name="ibv_badgeColor" format="color" />
-    <attr name="ibv_badgeTextStyle" format="reference" />
+    <attr name="ibv_badgeTextStyle" format="string" />
     
-    <!-- تم إزالة سمات ZXing (zxing_use_texture_view, zxing_preview_scaling_strategy) لأنها موجودة في مكتبة com.journeyapps:zxing-android-embedded في build.gradle -->
+    <!-- تم إزالة سمات ZXing لأنها موجودة في مكتبة com.journeyapps:zxing-android-embedded -->
 </resources>
