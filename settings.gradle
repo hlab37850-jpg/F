@@ -10,7 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' } // <-- تم النقل إلى هنا بشكل صحيح
+        maven { url 'https://jitpack.io' }
+        // إضافة مستودع JCenter لتحميل المكتبات القديمة
+        jcenter()
     }
 }
 rootProject.name = "CleanInventoryApp"
