@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- سمات مخصصة لأدوات واجهة المستخدم الخاصة بالتطبيق -->
+    <!-- السمات السابقة -->
     <attr name="indicatorTrackGapSize" format="dimension" />
     <attr name="trackStopIndicatorSize" format="dimension" />
     <attr name="thumbHeight" format="dimension" />
@@ -8,4 +8,32 @@
     <attr name="thumbWidth" format="dimension" />
     <attr name="trackInsideCornerSize" format="dimension" />
     <attr name="showMarker" format="boolean" />
+    
+    <!-- سمات SignatureView -->
+    <attr name="penColor" format="color" />
+    <attr name="enableSignature" format="boolean" />
+    <attr name="penSize" format="dimension" />
+    
+    <!-- سمات PercentLayout -->
+    <attr name="layout_heightPercent" format="fraction" />
+    <attr name="layout_widthPercent" format="fraction" />
+    
+    <!-- سمات ImageBadgeView (IBV) -->
+    <attr name="ibv_badgeTextSize" format="dimension" />
+    <attr name="ibv_badgePosition" format="integer" />
+    <attr name="ibv_fixedBadgeRadius" format="dimension" />
+    <attr name="ibv_badgeTextColor" format="color" />
+    <attr name="ibv_badgeValue" format="string" />
+    <attr name="ibv_maxBadgeValue" format="integer" />
+    <attr name="ibv_badgeLimitValue" format="boolean" />
+    <attr name="ibv_badgeColor" format="color" />
+    <attr name="ibv_badgeTextStyle" format="reference" />
+    
+    <!-- سمات ZXing Barcode Scanner -->
+    <attr name="zxing_use_texture_view" format="boolean" />
+    <attr name="zxing_preview_scaling_strategy" format="enum">
+        <enum name="centerCrop" value="0"/>
+        <enum name="fitCenter" value="1"/>
+        <enum name="fitXY" value="2"/>
+    </attr>
 </resources>
